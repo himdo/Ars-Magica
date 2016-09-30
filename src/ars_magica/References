@@ -1,0 +1,68 @@
+
+remove tempPath
+
+
+private int SpellArrayIndex=0;
+private int VirtueArrayIndex = 0;
+private int FlawArrayIndex = 0;
+private int EquipmentArrayIndex = 0;
+private int AbilityArrayIndex=0;
+
+//spell references:
+String [][] Spells = new String[1000][12];
+
+Spells[SpellArrayIndex][0]=name.getText()+"";
+Spells[SpellArrayIndex][1]=tech.getSelectedIndex()+"";
+Spells[SpellArrayIndex][2]=techreq.getSelectedIndex()+"";
+Spells[SpellArrayIndex][3]=form.getSelectedIndex()+"";
+Spells[SpellArrayIndex][4]=formreq.getSelectedIndex()+"";
+Spells[SpellArrayIndex][5]=ritual.isSelected()+"";
+Spells[SpellArrayIndex][6]=level.getText()+"";
+Spells[SpellArrayIndex][7]=range.getText()+"";
+Spells[SpellArrayIndex][8]=Duration.getText()+"";
+Spells[SpellArrayIndex][9]=Target.getText()+"";
+Spells[SpellArrayIndex][10]=Sense.getText()+"";
+Spells[SpellArrayIndex][11]=desc.getText()+"";
+
+SpellArrayIndex+=1;
+
+
+// Virtues
+String [][] Virtues = new String[1000][4];
+
+Virtues[VirtueArrayIndex][0]=name.getText();					
+Virtues[VirtueArrayIndex][1]=major.isSelected()+"";
+Virtues[VirtueArrayIndex][2]=type.getText();
+Virtues[VirtueArrayIndex][3]=description.getText();
+VirtueArrayIndex+=1;
+
+//Flaws
+String[][]Flaws = new String[1000][4];
+
+Flaws[FlawArrayIndex][0]=name.getText();					
+Flaws[FlawArrayIndex][1]=major.isSelected()+"";
+Flaws[FlawArrayIndex][2]=type.getText();
+Flaws[FlawArrayIndex][3]=description.getText();
+FlawArrayIndex+=1;
+
+// Abilities
+String[][]Ability = new String[1000][4];
+DefaultComboBoxModel abilityNames = new DefaultComboBoxModel();
+
+Ability[AbilityArrayIndex][0]=name.getText();					
+Ability[AbilityArrayIndex][1]=score.getText()+"";
+Ability[AbilityArrayIndex][2]=type.getText();//Specialization  //Special
+Ability[AbilityArrayIndex][3]=description.getText();
+AbilityArrayIndex+=1;
+
+
+//equipment
+String[][]Equipment = new String[1000][3];
+DefaultComboBoxModel EquipmentNames = new DefaultComboBoxModel();
+
+Equipment[EquipmentArrayIndex][0]=name.getText();	
+Equipment[EquipmentArrayIndex][1]=amount.getText();
+Equipment[EquipmentArrayIndex][2]=description.getText();
+EquipmentArrayIndex+=1;
+					
+					

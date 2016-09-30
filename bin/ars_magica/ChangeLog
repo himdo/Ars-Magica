@@ -1,0 +1,28 @@
+V0.99.03
++"check version" settings
+
+V0.99.02
++Added a theme Button in settings (alpha)
++Tab placement button in settings
+!under the hood recoding when it comes to dice rolling
+!as well as made more under the hood re-coding for functions
+!variable names under the hood
+!* Dice Rolling Optimizing
+*Dice Rolling to be on only one pane
+
+
+V0.99.01
++Added Tool tips to most buttons
++Added more classes for programming
++added menu button for change log
+*keep the selected object when swapping area
+*Changed botched text
+
+V0.99
++Created a Change Log
+
+key
+'+': added
+'-': removed
+'*': fixed
+'!': changed
